@@ -1,6 +1,5 @@
 import streamlit as st
-import tensorflow as tf
-from tf.keras.models import load_model
+from tensorflow.keras.models import load_model
 import numpy as np
 from PIL import Image
 import io
@@ -9,6 +8,7 @@ import io
 
 # Load the saved model
 model = load_model(r'C:\Users\HP\Desktop\DATALAB\pythonclasses\medical_image_classifier_new\saved_model\my_model.h5')
+
 
 # Define the classes based on your dataset
 class_names = ['Healthy', 'Malignant']  # Update this based on your dataset
